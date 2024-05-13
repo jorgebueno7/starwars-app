@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Exit</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="ion-padding dark-theme">
+  <div class="flex-container">
+    <ion-card class="card">
+      <ion-card-header>
+        <ion-card-title>Are you sure you want to close this app?</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="button-container">
+        <ion-button expand="full" color="primary" (click)="presentAlert()">YES</ion-button>
+        <ion-button expand="full" color="danger" href="/tabs/wiki">NO</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
